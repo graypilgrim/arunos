@@ -8,7 +8,7 @@
 static void tokenize_command(char *command_string, int *argc_pointer, char **argv);
 static command_handler get_command_handler(const char *command_name);
 
-/* 
+/*
  * Entry point for the kernel monitor. Monitor provides a simple shell with
  * a set of commands which starts when the OS boots.
  */
@@ -20,7 +20,7 @@ void monitor(void)
 
 	while (true) {
 		command_handler handler = NULL;
-		
+
 		kprintf("K> ");
 		kgets(command_string);
 

@@ -31,11 +31,12 @@ int mon_kerninfo(int argc, char **argv);
 int mon_status(int argc, char **argv);
 int mon_execute(int argc, char **argv);
 
+
 /* monitor commands declarations */
 static struct Command const commands[] = {
 	{
-		"help", 
-		"Displays this list of commands", 
+		"help",
+		"Displays this list of commands",
 		(command_handler) mon_help
 	}, {
 		"backtrace",
@@ -47,11 +48,11 @@ static struct Command const commands[] = {
 		(command_handler) mon_hextee
 	}, {
 		"kerninfo",
-		"Displays information about the kernel", 
+		"Displays information about the kernel",
 		(command_handler) mon_kerninfo
 	}, {
 		"status",
-		"Displays current status of the system", 
+		"Displays current status of the system",
 		(command_handler) mon_status
 	}, {
 		"execute",

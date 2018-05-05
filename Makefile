@@ -40,7 +40,7 @@ ifeq ($(arch),raspberrypi)
 endif
 
 qemu: $(OS).bin
-	qemu-system-arm $(QEMU_FLAGS) -kernel $(OS).bin
+	# qemu-system-arm $(QEMU_FLAGS) -kernel $(OS).bin
 
 qemu-gdb: $(OS).bin
 	qemu-system-arm $(QEMU_FLAGS) -gdb tcp::26000 -S -kernel $(OS).bin
